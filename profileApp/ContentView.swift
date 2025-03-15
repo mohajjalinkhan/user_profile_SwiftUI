@@ -6,10 +6,8 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
     var body: some View {
-       
             ZStack(){
                 // background image
                 Image(.background)
@@ -19,7 +17,6 @@ struct ContentView: View {
                     // profile Image
                     Spacer()
                     Image(.profile)
-                    
                         .resizable()
                         .scaledToFit()
                         .frame(width: 180,height: 180,alignment: .top)
@@ -93,24 +90,12 @@ struct ContentView: View {
                             .font(.system(size:30))
                             .foregroundStyle(.black)
                             .multilineTextAlignment(.center)
-                            .opacity(0.6)
-                            
-                            
+                            .opacity(0.6)           
                     }
-                }
-               
-                    
-                    
-                    
-                
-                
-                    
+                }         
             }
         }
-      
     }
-
-
 #Preview {
     ContentView()
 }
